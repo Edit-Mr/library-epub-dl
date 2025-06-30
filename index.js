@@ -7,8 +7,8 @@ import pLimit from "p-limit";
 const writeFile = promisify(fs.writeFile);
 
 // 請設定要下載的資產 ID
-const asset_id = "4028e4757428cbd20176e129f469329d";
-const length = 395; // 假設有 395 張圖片
+const asset_id = "8a8a84ca88aebaf6018c18b8fba7618e";
+const length = 1; // 假設有 395 張圖片
 
 const baseUrl = `https://ebookdrm.nlpi.edu.tw/hyreadipadservice3/hyread/v3/asset/${asset_id}/_epub/OEBPS/Images/`;
 const outputDir = "./downloads";

@@ -1,0 +1,21 @@
+封面
+cover.jpg
+
+序章
+001.png
+Day 1 JavaScript 的起源與基礎（上）
+009.png
+Day 2 JavaScript 的起源與基礎（下）
+057.png
+Day 3 前端工程師的主戰場：瀏覽器裡的 JavaScript（上）
+111.png
+Day 4 前端工程師的主戰場：瀏覽器裡的 JavaScript（下）
+163.png
+Day 5 深入理解 JavaScript 核心：函式、物件、原型鍊（上）
+209.png
+Day 6 深入理解 JavaScript 核心：函式、物件、原型鍊（中）
+269.png
+Day 7 深入理解 JavaScript 核心：函式、物件、原型鍊（下）
+297.png
+Day 8 JavaScript 的現在與未來
+357.png

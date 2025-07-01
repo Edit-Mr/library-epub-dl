@@ -1,7 +1,18 @@
 # 圖書館電子書下載
 
 僅供學術用途。  
-圖書館是讓你學習的地方，電腦給你搜尋資料。我學習爬蟲。
+圖書館是讓你學習的地方，我學習爬蟲。
+
+## TL;DR
+
+底下是一邊研究的筆記，簡單來說就是：
+
+* PDF: 似乎都有經過加密
+* EPUB:
+  * 圖片：有的直接送你，有的切得很醜。
+  * 內文：都有 DRM，下載的 xhtml 是二進制，目前還沒空研究。
+
+所以純圖片的有的平台可以輕鬆下載，純文字的不行。
 
 ## [公共資訊圖書館](https://ebook.nlpi.edu.tw/)
 
@@ -9,13 +20,13 @@
 
 ### EPUB
 
-靜態資源，不會看 cookie 跟 token。
+
 
 目前遇到兩種情況，可以開 F12 看看，建議可以直接篩選圖片封包：
 
 #### 情況 1：整本 EPUB 送你
 
-如果到中間的頁面看得出來是文字而不是圖片，那看來他整本 EPUB 送你了。
+如果到中間的頁面看得出來是文字而不是圖片，那看來他整本 EPUB 送你了。圖片不會，但內容會看 Cookie。
 
 觀察下載的網址
 
@@ -30,6 +41,8 @@ https://ebookdrm.nlpi.edu.tw/hyreadipadservice3/hyread/v3/asset/4028e4757c7909bc
 ```
 
 #### 情況 2：純圖片
+
+靜態資源，不會看 cookie 跟 token。一樣跟上面一樣可以下載
 
 檔案稍微會偏大且不能選取文字，但至少排版是好看的。
 
@@ -166,7 +179,7 @@ Day 2 JavaScript 的起源與基礎（下）
 4. 執行 `images2EPUB.py`
 
 ```
-python ./images2EPUB.py -t "標題" -a "作者" -s "Book" --pagelist pagelist.txt --toclist toclist.txt  a/ a.EPUB
+python ./images2EPUB.py -t "哎呀！早知道就不會破版的CSS設計技巧：前端工程師防止佈局意外的必學密技" -a "陳泰銘 Taiming" -s "Book" --pagelist pagelist.txt --toclist toclist.txt  downloads/ output.EPUB
 ```
 
 這裡有完整參數：
